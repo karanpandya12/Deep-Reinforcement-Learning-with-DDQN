@@ -8,11 +8,17 @@ A DDQN uses two different Q networks to overcome this problem. One of the networ
 
 ## Environment
 A pole is attached by an un-actuated joint to a cart, which moves along a frictionless track. The system is controlled by applying a force of +1 or -1 to the cart. The pendulum starts upright, and the goal is to prevent it from falling over. <br>
-<img src = "/Images/dataset_1.png" height = 300>
+<p align = "center">
+  <img src = "/Images/dataset_1.png" height = 300>
+</p>
 
 ## Results
 A reward of +1 is provided for every timestep that the pole remains upright. The episode ends when the pole is more than 15 degrees from vertical, or the cart moves more than 2.4 units from the center. OpenAI Gym defines CartPole-v0 as being "solved" upon getting average reward of 195.0 over 100 consecutive trials.
 The following graph shows the evaluation environment reward after every 1000 paramter updates. In the code, the parameters of the online Q network are updated at the end of every episode. However, the Q network can be updated at every step in every episode to yield faster convergence. <br>
-<img src = "/Images/result_1.png" height = 300>
+<p align = "center">
+  <img src = "/Images/result_1.png" height = 300>
+</p>
 
-![](/Images/cartpole.gif)
+<p align = "center">
+<img src = "/Images/cartpole.gif">
+</p>
